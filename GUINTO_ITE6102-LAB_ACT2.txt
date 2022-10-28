@@ -1,0 +1,94 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+   int a, b;
+   cout << "Enter first number: ";
+   cin >> a;
+   cout << "Enter second number: ";
+   cin >> b;
+   cout << "a is equal to " << a << "\n";
+   cout << "b is equal to " << b << "\n";
+   if (a < b) {
+   cout << "a is less than b"; 
+   }
+   else if (a = b) {
+   cout << "a is equal to b"; 
+   }
+   else {
+   cout << "a is greater than b"; 
+   }
+   
+   return 0;
+}
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+   int a, b, c;
+   cout << "Enter first number: ";
+   cin >> a;
+   cout << "Enter second number: ";
+   cin >> b;
+   cout << "Enter third number: ";
+   cin >> c;
+   cout << "a is equal to " << a << "\n";
+   cout << "b is equal to " << b << "\n";
+   cout << "c is equal to " << c << "\n";
+   if (a > b && a > c) {
+       cout << "a is the highest number\n";
+       if (b > c) {
+           cout << "c is the lowest number"; 
+       }
+       else if (c > b) {
+           cout << "b is the lowest number";
+       }
+       else {
+           cout << "both b and c are the lowest number";
+       }
+   }
+   else if (b > a && b > c) {
+       cout << "b is the highest number\n";
+       if (a > c) {
+           cout << "c is the lowest number"; 
+       }
+       else if (c > a) {
+           cout << "a is the lowest number";
+       }
+       else {
+           cout << "both a and c are the lowest number";
+       }
+   }
+   else if (c > a && c > b) {
+       cout << "c is the highest number\n";
+       if (a > b) {
+           cout << "b is the lowest number"; 
+       }
+       else if (b > a) {
+           cout << "a is the lowest number";
+       }
+       else {
+           cout << "both a and b are the lowest number";
+       }
+   }
+   else if (a == b || b == c || c == a) {
+       if (a < b && c ) {
+           cout << "both b and c are the highest number\n a is the lowest number"; 
+       }
+       else if (b < a && c ) {
+           cout << "both a and c are the highest number\n b is the lowest number"; 
+       }
+       else if (c < a && b ) {
+           cout << "both a and b are the highest number\n c is the lowest number"; 
+       } 
+       else {
+           cout << "all numbers are equal";
+       }
+   }
+   return 0;
+}
